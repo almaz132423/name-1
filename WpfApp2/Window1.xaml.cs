@@ -10,26 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApp2
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Window1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Window1 : Window
     {
-        public MainWindow()
+        public Window1()
         {
             InitializeComponent();
-            MyFrame.Content = new Page1();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (MyFrame.CanGoBack)
-                MyFrame.GoBack();
+            MainWindow win = new MainWindow();
+            win.Show();
+            this.Hide();
         }
     }
 }
