@@ -23,7 +23,7 @@ namespace WpfApp2
         public MainWindow()
         {
             InitializeComponent();
-            my_Frame.Content = new Page1();
+            //my_Frame.Content = new Page1();
         }
     }
 }
